@@ -5,7 +5,7 @@ buttons.forEach(async (btn) => {
     const username = btn.dataset.username || '';
 
     const url =
-        `test.html?vusername=${encodeURIComponent(username)}&vuserid=${userId}&vstatus=1&valasan=x`;
+        `?vusername=${encodeURIComponent(username)}&vuserid=${userId}&vstatus=1&valasan=x`;
 
     try {
         const response = await fetch(url);
